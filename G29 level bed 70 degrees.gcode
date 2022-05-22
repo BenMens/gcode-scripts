@@ -9,7 +9,7 @@ M107 ;start with the fan off
 
 ; Automatic bed leveling
 M140 S70; Set bed temperature
-M190 S70; Wait for Bed Temperature
+M190 R70; Wait for Bed Temperature
 G29; Perform bed leveling
 M500; Save mesh to EEPROM
-M420 S1 ;Enable auto bed leveling
+M420 S1 V1 ;Enable auto bed leveling
